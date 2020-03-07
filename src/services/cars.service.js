@@ -7,7 +7,7 @@ class CarService {
       let searchQuery;
       if (data.price || data.year) {
         searchQuery = `SELECT * FROM cars_inventory WHERE price IS NULL OR price < ${data.price} 
-      AND year IS NULL or year >= ${data.year}'`;
+      AND year IS NULL or year >= ${data.year}`;
       } else {
         searchQuery = `SELECT * FROM cars_inventory;`;
       }
